@@ -1,0 +1,14 @@
+<body>
+    <div class="contact-form">
+        <!-- <img src="../../../../assets/img/2.jpg" alt="" class="avatar"> -->
+        <h2>Login Form</h2>
+        <form action="" #loginForm="ngForm" name="loginForm">
+            <p>Email</p>
+            <input type="email"  [(ngModel)]="email_Id" placeholder="Enter Email" name="email">
+            <p>Password</p>
+            <input type="password" [(ngModel)]="password" placeholder="Enter Password" name="pswd">
+            <input type="submit" value="login" (click)="Login(loginForm)">
+            <input type="button" value="Register" (click)="register()">
+        </form>
+    </div>
+</body>
